@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Splashscreen from "../pro10/components/Splashscreen"
 import Main from '../pro10/components/Main';  // Correct import for Main
-
+import ChatScreen from './components/ChatScreen';
 const App = () => {
   const Stack = createNativeStackNavigator();
 
@@ -21,6 +21,7 @@ const App = () => {
           name="Main"
           component={Main}
         />
+        <Stack.Screen name="Chat" component={ChatScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
